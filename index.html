@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUN WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="news-ticker.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="navbar-container">
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="" class="MUN_LOGO" alt="MUN LOGO">
+            </div>
+            <div class="logo-text">MUN</div>
+        </div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li class="menu dropdown">
+                <a href="#apropos">À Propos</a>
+                <ul>
+                    <li><a href="#mun">MUN?</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </li>
+            <li class="menu dropdown">
+                <a href="#evenements">Événements</a>
+                <ul>
+                    <li><a href="MUN_2026.html" target="_blank">MUN 2026</a></li>
+                    <li><a href="MUN_2025.html" target="_blank">MUN 2025</a></li>
+                </ul>
+            </li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="accueil" id="accueil">
+    <div class="hero">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to MUN</h1>
+            <a href= "Mun_2026.html" target="_blank" class="btn">explore MUN</a>
+        </div>
+    </div>
+
+    <!-- NEWS TICKER -->
+    <div class="news-ticker" id="newsTicker">
+        <div class="news-ticker__header">
+            <span class="breaking-badge">
+                <span class="breaking-badge__dot"></span>
+            </span>
+        </div>
+        <div class="news-ticker__wrapper">
+            <div class="news-ticker__scroll" id="scrollContainer">
+                <div class="news-ticker__content" id="tickerContent">
+                    <!-- News items inserted by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENSA PRESENTATION -->
+     <div class="title_pre"><a href="https://ensa-marrakech.uca.ma/">ENSA Marrakech</a></div>
+    <div class="container" id="presentation">
+        <div class="presentation_text">
+            <p>
+                Fondée en 2000, l’École Nationale des Sciences Appliquées 
+                de Marrakech (ENSA Marrakech) est une institution publique
+                rattachée à l’Université Cadi Ayyad. Elle a pour vocation 
+                de former des ingénieurs compétents, innovants et prêts à 
+                relever les défis technologiques et industriels.
+                Reconnue pour la qualité de son enseignement et de ses activités de recherche, 
+                l’ENSA Marrakech joue un rôle clé dans le développement de la région Marrakech-Safi.
+                En collaborant étroitement avec les acteurs socio-économiques, l’école contribue activement
+                au progrès scientifique et industriel, tout en visant à renforcer sa notoriété au niveau national.
+            </p>
+        </div>
+        <img class="img_ensa" src="ensa.jpg" alt="ENSA">
+    </div>
+
+    <!-- MUN VIDEO + TEXT -->
+    <section class="mun-presentation" id="mun">
+             <div class="title_pre"> <a href="">Model United Nations</a></div>
+
+        <div class="mun-container">
+            <div class="mun-text">
+                <p>
+                  (MUN) est une simulation académique des Nations Unies
+                    permettant aux étudiants de développer leurs compétences en diplomatie,
+                    négociation, leadership et prise de parole en public.
+                </p>
+            </div>
+            <div class="mun-video">
+                <video controls>
+                    <source src="mun-recap.mp4" type="video/mp4">
+                </video>
+            </div> 
+        </div>
+        <div style="justify-content: center; display: flex  ;" ><a href="Mun_2026.html" target="_blank" class="btn">Explore  our events </a></div>
+
+
+    </section>
+    <section class="stats-section">
+  <div class="stats-grid">
+
+    <div class="stats-card">
+      <div class="icon">📅</div>
+      <div class="number">3</div>
+      <div class="label">Days of Excellence</div>
+    </div>
+
+    <div class="stats-card">
+      <div class="icon">👥</div>
+      <div class="number">5</div>
+      <div class="label">UN Committees</div>
+    </div>
+
+    <div class="stats-card">
+      <div class="icon">🌐</div>
+      <div class="number">200+</div>
+      <div class="label">Delegates United</div>
+    </div>
+
+    <div class="stats-card">
+      <div class="icon">🏆</div>
+      <div class="number">1st</div>
+      <div class="label">Historic Conference</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="contact-section" id="contacts">
+  <div class="container">
+    <!-- Heading -->
+    <div class="contact-header">
+      <h1>Get In Touch</h1>
+      <p>Have questions? Want to join us? We'd love to hear from you!</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <h2>Send us a Message</h2>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your.email@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="info-card">
+          <strong>Email:</strong> contact@ensamun.ma
+        </div>
+        <div class="info-card">
+          <strong>Phone:</strong> +212 6XX-XXXXXX
+        </div>
+        <div class="info-card">
+          <strong>Location:</strong> ENSA Marrakech, Morocco
+        </div>
+
+        <div class="info-card office-hours">
+          <strong>Office Hours:</strong>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container footer">
+    <div class="footer-content">
+      <div class="brand">
+        <div class="logo">MUN</div>
+        <span class="brand-name">ENSA MUN Marrakech</span>
+      </div>
+      <p class="tagline">Pioneering diplomacy and innovation within the ENSA network</p>
+      <p class="copyright">© 2026 ENSA MUN Marrakech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
